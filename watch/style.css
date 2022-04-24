@@ -1,0 +1,48 @@
+ @font-face {
+  font-family: test;
+  src: url("Seven\ Segment.ttf");
+} 
+
+main {
+  font-family: test;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+}
+body {
+  height: 100vh;
+  background: rgb(78, 77, 78);
+}
+.con{
+    border: 5px solid green;
+    padding: 20px 30px ;
+    border-radius: 10px;
+}
+ #clock {
+  font-family:test;
+  color:  rgb(221, 217, 235);
+  font-size: 90px;
+  font-weight: 500;
+  border-bottom: 2px solid green;
+} 
+.days{
+    color: rgb(221, 217, 235);
+    font-size: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    padding: 10px 10px ;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 770px) {
+  #clock {
+    font-size: 50px;
+  }
+  .days{
+      font-size: 1.1em;
+  }
+}

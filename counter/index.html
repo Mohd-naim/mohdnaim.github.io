@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div class="container">
+       <div class="div1">
+           <output class="output">0</output>
+        </div>
+        <div>
+        <button class="decrease">Decrease</button>
+        <button class="reset">Reset</button>
+        <button class="increase">Increase</button>
+        </div>
+    </div>
+    <script>
+       const dec = document.querySelector('.decrease'); 
+         const inc = document.querySelector('.increase');
+            const reset = document.querySelector('.reset');
+            const output = document.querySelector('.output');
+            let counter = 0;
+            output.textContent = counter;
+            dec.addEventListener('click', () => {
+                counter--;
+                output.textContent = counter;
+            });
+            inc.addEventListener('click', () => {
+                counter++;
+                output.textContent = counter;
+            });
+            reset.addEventListener('click',() =>{
+                counter = 0;
+                output.textContent = counter;
+            })
+    </script>
+</body>
+</html>

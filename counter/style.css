@@ -1,0 +1,57 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.container {
+    height: 50%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    border: 2px solid grey;
+    padding: 20px 30px ;
+}
+
+.increase{
+    margin: 20px;
+    background: green;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px ;
+    border-radius: 5px;
+}
+
+.decrease{
+    margin: 20px;
+    background: red;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px ;
+    border-radius: 5px;
+}
+
+.reset {
+    background: blue;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px ;
+    border-radius: 5px;
+}
+
+.output {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255, .8);
+    border: 1px solid transparent;
+}
+.div1{
+    text-align: center;
+    width: 80%;
+    padding: 0 20px 0 20px;
+    background-color: rgb(77, 138, 156);
+    border: 1px solid red;
+    border-radius: 5px;
+}
