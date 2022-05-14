@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form in HTML and CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+
+     <form action="" id="form">
+         <!-- for Name -->
+         <div class="form-control">
+             <label for="name" id="label-name">
+                 Name
+             </label>
+
+             <input type="text" id="name" placeholder="Enter your name.." >
+         </div>
+<!-- for email -->
+         <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <input type="email" id="email" placeholder="Enter your email.." >
+        </div>
+        <!-- for Date of Birth -->
+        <div class="form-control">
+            <label for="Date of Birth" id="label-Date of Birth">
+                Date of Birth
+            </label>
+
+            <input type="date" id="Date of Birth" placeholder="Enter your Date of Birth.." >
+        </div>
+
+        <!-- for role -->
+        <div class="form-control">
+             <label for="role" id="label-role">
+                 Role
+             </label>
+
+             <select name="role" id="label-role">
+                 <option value="select-role">Select Role</option>
+                 <option value="students">Students</option>
+                 <option value="intern">Intern</option>
+                 <option value="professional">Professional</option>
+                 <option value="others">Others</option>
+             </select>
+         </div>
+
+         <!-- for radio button  -->
+         <divinput class="form-control">
+             <label for="">Would you recommended it for your friends </label>
+             <label for="recommended1">
+                 <input type="radio" name="rec" id="re1">Yes 
+             </label>
+             <label for="recommended2">
+                <input type="radio" name="rec" id="rec2">No 
+            </label>
+            <label for="recommended3">
+                <input type="radio" name="rec" id="rec3">May be 
+            </label>
+         </div>
+
+         <!-- languDate of Birth and framework -->
+         <div class="form-control">
+             <label for="">
+                 LanguDate of Birth and Framework known <small>(Check all tha apply.)</small>
+             </label>
+
+             <label for="inp-1">
+                 <input type="checkbox" name="inp" id="">C
+             </label>
+             <label for="inp-1">
+                <input type="checkbox" name="inp" id="">C++
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">C#
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">Java
+            </label><label for="inp-1">
+                <input type="checkbox" name="inp" id="">Python
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">Javascript
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">React
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">Angular
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">Node.js
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">Django
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="">Spring
+            </label>
+         </div>
+
+         <div class="form-control">
+             <label for="comments">Any comments or Suggest:-</label>
+             <textarea name="commet" id="comment" rows="10"  placeholder="Enter your suggestions"></textarea>
+         </div>
+
+        <button type="submit">Submit</button>
+
+     </form>
+</body>
+</html>

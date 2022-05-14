@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch </title>
+</head>
+<style>
+    body{
+        width: auto;
+        height: 100vh;
+        background:rgba(33, 220, 245, 0.349); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header{
+        float:left;
+        font-size: 30px;
+        font-variant: small-caps;
+        font-weight: 600;
+        color: rgb(16, 150, 105);
+    }
+
+    .container{
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px 5px;
+        padding: 30px ;
+        background: rgba(43, 134, 31, 0.911);
+        flex-wrap: wrap;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .span-two{
+        grid-column: span 2 ;
+        width: 100%;
+        display: grid;
+        gap: 20px;
+    }
+
+
+    input[type="text"],[type="tel"],[type="email"],textarea,select{
+        font-size: 1em;
+        padding:  10px;
+        border-radius: 5px 10px;
+    }
+    input,textarea:focus{
+      outline: none;
+    }
+    textarea{
+        font-size: 16px;
+        font-weight:900;
+        font-variant: small-caps;
+    }
+</style>
+<body>
+    <header>Get In Touch </header>
+    <div class="container">
+        <form action="index.php" method="post">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="email" id="email" name="email" placeholder="Your email..">
+            <input type="tel" id="tel" name="tel" placeholder="Phone no...">
+             <div class="span-two">
+            <input type="text" id="address" placeholder="Youre Address">
+            <select name="" id="">
+                <option value="" selected>Select Subject</option>
+                <option>For Query Purpose</option>
+                <option value="">For Information</option>
+                <option>For Research Purpose</option>
+            </select>
+            <textarea name="message" id="" cols="42" rows="10" placeholder="Your message..."></textarea>
+             </div>
+    </div>
+</body>
+</html>
